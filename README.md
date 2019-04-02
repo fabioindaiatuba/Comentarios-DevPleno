@@ -1,6 +1,6 @@
 # Sistema de Comentarios em React - Curso ReactJS - DevPleno
 
-### SEM IMAGEM
+### ** sem imagem tela **
 
 ## Funções
 
