@@ -22,13 +22,20 @@ class SignUp extends Component {
         return (
             <div>
                 <h4>Criar Conta</h4>
-                <input type="text" onChange={this.handleChange('email')} placeholder="e-Mail" />
-                <input type="password" onChange={this.handleChange('passwd')} placeholder="senha" />
-                <button type='button' onClick={this.createAccount}>Criar conta</button>
-                <button onClick={() => this.props.changeScreen('login')} >Já tenho uma conta, entrar!</button>
+                <form className='form-inline'>
+                    <input className='form-control mr-1' type="text" onChange={this.handleChange('email')} placeholder="e-Mail" />
+                    <input className='form-control mr-1' type="password" onChange={this.handleChange('passwd')} placeholder="senha" />
+                    <button className='btn btn-primary mr-1' type='button' onClick={this.createAccount}>Criar conta</button>
+                    <button className='btn' onClick={() => this.props.changeScreen('login')} >Já tenho uma conta, entrar!</button>
+                </form>
                 {
                     this.props.isSignUpError && 
-                    <p><b>Erro: </b>{errorMessages[this.props.signUpError]}</p>
+                    <div className='card text-white bg-danger mt-3'>
+                        <div className='card-header'>Erro ao criar nova conta</div>
+                        <div className='card-body'>
+                            {errorMessages[this.props.signUpError]}
+                        </div>
+                    </div>
                 }
             </div>
         );

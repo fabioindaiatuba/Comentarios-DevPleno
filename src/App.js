@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 
+import 'bootstrap-css-only';
+
 import Comments from './Comments';
 import NewComment from './NewComment';
 import Login from './Login';
@@ -111,7 +113,7 @@ class App extends Component {
 
   render() {
     return (
-      <div>
+      <div className='container mt-3'>
         { this.state.isAuth && 
           <User 
             email={this.state.user.email} 
