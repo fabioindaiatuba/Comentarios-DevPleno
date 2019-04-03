@@ -1,6 +1,6 @@
 # Sistema de Comentarios em React - Curso ReactJS - DevPleno
 
-### ** sem imagem tela **
+![imagem com a tela do sistema](https://github.com/fabioindaiatuba/Comentarios-DevPleno/raw/master/snapshots/tela1.png)
 
 ## Funções
 
